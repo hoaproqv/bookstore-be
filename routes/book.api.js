@@ -34,7 +34,7 @@ router.get("/", (req, res, next) => {
 
     //Read data from db.json then parse to JSobject
     console.log("page:", page, "limit:", limit);
-    let db = fs.readFileSync(path.join(__dirname, "db.json"), "utf-8");
+    let db = fs.readFileSync("db.json", "utf-8");
 
     db = JSON.parse(db);
 
